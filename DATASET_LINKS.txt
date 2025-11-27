@@ -1,0 +1,6 @@
+EuroSAT dataset links:
+- Kaggle EuroSAT RGB: https://www.kaggle.com/datasets/apollo2506/eurosat-dataset
+- TensorFlow Datasets: https://www.tensorflow.org/datasets/catalog/eurosat
+- EuroSAT GitHub / Zenodo references: https://github.com/phelber/EuroSAT
+
+(If using Kaggle, you'll need to login and accept dataset rules.)

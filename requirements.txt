@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+tensorflow==2.12.0
+numpy
+pandas
+scikit-learn
+matplotlib
+prometheus_client
+python-multipart
+Pillow
+locust
+nbformat
+streamlit
+boto3

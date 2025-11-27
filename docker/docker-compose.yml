@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - MODEL_PATH=/app/models/model_latest.h5
+      - DATA_DIR=/app/data
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
