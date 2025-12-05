@@ -33,8 +33,14 @@ def startup_event():
         model = load_trained_model(MODEL_PATH)
     # infer classes from train dir if exists
     if os.path.exists(TRAIN_DIR):
-        subdirs = sorted([d for d in os.listdir(TRAIN_DIR) if os.path.isdir(os.path.join(TRAIN_DIR, d))])
-        class_indices.update({name: idx for idx, name in enumerate(subdirs)})
+        subdirs = [d for d in os.listdir(TRAIN_DIR)
+                   if os.path.isdir(os.path.join(TRAIN_DIR, d))]
+    
+        subdirs = sorted(subdirs)
+
+        class_indices = {name: idx for idx, name in enumerate(subdirs)}
+    else: 
+        print("Training directory not found — class labels unavailable.")
 
 @app.get("/health")
 def health():
