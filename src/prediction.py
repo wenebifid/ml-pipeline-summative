@@ -17,7 +17,7 @@ def predict_image(model, image_path, class_indices):
     results = []
     for idx in top_idx:
         results.append({
-            "class": inv_map.get(idx, str(idx)),
+            "class": inv_map[idx],
             "probability": float(preds[0][idx])
         })
     return results
