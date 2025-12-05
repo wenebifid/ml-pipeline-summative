@@ -31,16 +31,9 @@ def startup_event():
     start_http_server(8001)
     if os.path.exists(MODEL_PATH):
         model = load_trained_model(MODEL_PATH)
-    # infer classes from train dir if exists
-    if os.path.exists(TRAIN_DIR):
-        subdirs = [d for d in os.listdir(TRAIN_DIR)
-                   if os.path.isdir(os.path.join(TRAIN_DIR, d))]
-    
-        subdirs = sorted(subdirs)
-
-        class_indices = {name: idx for idx, name in enumerate(subdirs)}
-    else: 
-        print("Training directory not found — class labels unavailable.")
+        
+    from src.class_names import CLASS_NAMES
+    class_indices = {name: idx for idx, name in enumerate(CLASS_NAMES)}
 
 @app.get("/health")
 def health():
