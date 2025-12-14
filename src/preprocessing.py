@@ -50,4 +50,3 @@ def load_image_for_prediction(image_path):
     arr = preprocess_input(arr)
     arr = np.expand_dims(arr, axis=0)
     return arr
- full file si preprocessing
