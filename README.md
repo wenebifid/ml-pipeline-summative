@@ -18,7 +18,7 @@ The project is designed to showcase:
 
 A full walkthrough of the project (architecture, setup, training, API usage, and flood simulation results) is available here:
 
-**YouTube Demo:** 
+**YouTube Demo:** https://youtu.be/PlnuJ2jz2Ow
 
 ---
 
