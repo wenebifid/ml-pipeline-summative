@@ -171,7 +171,7 @@ A flood (stress) test was conducted to simulate a large number of concurrent pre
 
 ### 📊 Simulation Results
 
-<img width="2560" height="1440" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/50ce2973-20a6-4d56-ad98-d8b4268c99e1" />
+<img width="2532" height="1175" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/4db4096a-299a-455a-aa4e-581af27c4f8f" />
 
 
 ### ✅ Observations
